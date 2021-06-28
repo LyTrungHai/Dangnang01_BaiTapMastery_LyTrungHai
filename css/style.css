@@ -103,7 +103,7 @@ body {
 /*************** *********CAROUSEL  **************************/
 
 .carousel {
-  background-image: url(/img/2.jpg);
+  background-image: url(../img/2.jpg);
   background-position: top;
   background-size: cover;
   height: 600px;
@@ -148,6 +148,16 @@ body {
   font-weight: bold;
 }
 
+.carousel::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
 .carousel .carousel__detail h3,
 p {
   margin-bottom: 16px;
@@ -155,16 +165,6 @@ p {
 .clear {
   clear: both;
 }
-
-/* .cover::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(0, 0, 0, 0.7);
-} */
 
 /******************* ***WELCOME ************************** */
 
@@ -292,7 +292,7 @@ p {
 
 /*********************SHARE  ***************************/
 .share {
-  background-image: url(/img/3.jpg);
+  background-image: url(../img/3.jpg);
   background-size: cover;
   background-position: center;
   height: 460px;
